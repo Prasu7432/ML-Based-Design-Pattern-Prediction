@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<head>
+<title>Machine Learning Based Design Patterns Prediction</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<center><font size="4" color="yellow">Machine Learning Based Design Patterns Prediction</font></center>
+		</div>
+		<div id="slogan">
+			
+		</div>
+	</div>
+	<div id="menu">
+		<ul><center>
+      <li><a href="{% url 'LoadDataset' %}"><font size="3" color="">Load Design Patterns Code</a></li>
+	  <li><a href="{% url 'Vector' %}"><font size="3" color="">Code to Numeric Vector</a></li>
+	  <li><a href="{% url 'TrainML' %}"><font size="3" color="">Train ML Algorithms</a></li>
+	  <li><a href="{% url 'Predict' %}"><font size="3" color="">Predict Design Patterns</a></li>
+	  <li><a href="{% url 'index' %}"><font size="3" color="">Logout</a></li>		
+		</center></ul>
+		<br class="clearfix" />
+	</div>
+	<div id="splash">
+		<img class="pic" src="{% static 'images/investor.jpg' %}" width="870" height="230" alt="" />
+	</div>
+	<br/>
+	<font size="" color="black"><center>{{ data|safe }}</center></font><br/>
+		<img src="data:image/png;base64, {{ img }}" alt="graph" />
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
+
+	
+</body>
+</html>
